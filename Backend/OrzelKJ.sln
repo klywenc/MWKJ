@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrzelKJ", "OrzelKJ\OrzelKJ.csproj", "{CEF1DD27-2253-45C6-9B12-0CDDBEFEBFB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{EB14CE62-1A6F-451A-A298-F4D3ACBB53CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEF1DD27-2253-45C6-9B12-0CDDBEFEBFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF1DD27-2253-45C6-9B12-0CDDBEFEBFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF1DD27-2253-45C6-9B12-0CDDBEFEBFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF1DD27-2253-45C6-9B12-0CDDBEFEBFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CEF1DD27-2253-45C6-9B12-0CDDBEFEBFB5} = {EB14CE62-1A6F-451A-A298-F4D3ACBB53CB}
+	EndGlobalSection
+EndGlobal
