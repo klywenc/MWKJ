@@ -1,0 +1,21 @@
+# Wyniki budowania .NET
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+
+# Pamięć podręczna NuGet
+*.nuget.props
+*.nuget.targets
+project.nuget.cache
+project.packagespec.json
+project.assets.json
+*.csproj.nuget.*
+
+# Ustawienia środowiska (Rider / IntelliJ)
+.idea/
+*.sln.docstates
+workspace.xml
+indexLayout.xml
+projectSettingsUpdater.xml
+rider.project.*
