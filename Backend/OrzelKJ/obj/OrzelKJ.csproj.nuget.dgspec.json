@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a.kalkowski\\IdeaProjects\\OrzelKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj": {}
+    "C:\\Users\\a.kalkowski\\RiderProjects\\MWKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a.kalkowski\\IdeaProjects\\OrzelKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj": {
+    "C:\\Users\\a.kalkowski\\RiderProjects\\MWKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a.kalkowski\\IdeaProjects\\OrzelKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj",
+        "projectUniqueName": "C:\\Users\\a.kalkowski\\RiderProjects\\MWKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj",
         "projectName": "OrzelKJ",
-        "projectPath": "C:\\Users\\a.kalkowski\\IdeaProjects\\OrzelKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj",
+        "projectPath": "C:\\Users\\a.kalkowski\\RiderProjects\\MWKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj",
         "packagesPath": "C:\\Users\\a.kalkowski\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a.kalkowski\\IdeaProjects\\OrzelKJ\\Backend\\OrzelKJ\\obj\\",
+        "outputPath": "C:\\Users\\a.kalkowski\\RiderProjects\\MWKJ\\Backend\\OrzelKJ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a.kalkowski\\AppData\\Roaming\\NuGet\\NuGet.Config"

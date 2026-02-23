@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7s9hR4q4fuk=",
+  "dgSpecHash": "wQVIxbIVO2o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\a.kalkowski\\IdeaProjects\\OrzelKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj",
+  "projectFilePath": "C:\\Users\\a.kalkowski\\RiderProjects\\MWKJ\\Backend\\OrzelKJ\\OrzelKJ.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a.kalkowski\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\a.kalkowski\\.nuget\\packages\\bouncycastle.cryptography\\2.6.1\\bouncycastle.cryptography.2.6.1.nupkg.sha512",

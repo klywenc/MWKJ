@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrzelKJ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a98f34e94d74aaadfec639f49883b1932c26284")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90289828dbde0828f0bb0db14573229106102a6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrzelKJ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrzelKJ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
