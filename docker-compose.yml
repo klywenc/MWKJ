@@ -6,6 +6,8 @@ services:
     container_name: backend_container
     ports:
       - "5000:8080" 
+    depends_on:
+      - db
     restart: always
 
   frontend:
@@ -17,15 +19,18 @@ services:
       - backend
     restart: always
 
-    db:
+  db:
     image: postgres:15-alpine 
     container_name: postgres_db
-    restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: orzelkj
     ports:
       - "5432:5432"
-    restart: never
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
+volumes:
+  postgres_data:
