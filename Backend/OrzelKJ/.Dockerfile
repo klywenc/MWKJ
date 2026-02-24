@@ -1,10 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-﻿FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
-WORKDIR /src
-
-
 COPY ["OrzelKJ.csproj", "./"]
 RUN dotnet restore "OrzelKJ.csproj"
 
