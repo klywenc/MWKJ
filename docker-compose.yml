@@ -1,19 +1,6 @@
 version: '3.8'
 
 services:
-db:
-    image: postgres:15-alpine 
-    container_name: postgres_db
-    restart: always
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: orzelkj
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
   backend:
     image: backend:latest
     container_name: backend_container
@@ -29,3 +16,16 @@ db:
     depends_on:
       - backend
     restart: always
+
+    db:
+    image: postgres:15-alpine 
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: orzelkj
+    ports:
+      - "5432:5432"
+    restart: never
+
