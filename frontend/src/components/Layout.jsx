@@ -1,7 +1,8 @@
 import { AppShell, Group, Text, NavLink, Stack, Box, ActionIcon, Divider, Avatar, useMantineColorScheme, useComputedColorScheme, Tooltip } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
-import { LayoutGrid, LogOut, ShieldCheck, History, Bell, Layers, Sun, Moon, Search, PanelLeftClose, PanelLeftOpen } from 'lucide-react';
+// Usunięte nieużywane importy (History, Search)
+import { LayoutGrid, LogOut, ShieldCheck, Bell, Layers, Sun, Moon, PanelLeftClose, PanelLeftOpen } from 'lucide-react';
 
 export default function DashboardLayout({ user, onLogout }) {
   // Flagopened kontroluje czy pasek jest szeroki czy wąski
@@ -26,7 +27,8 @@ export default function DashboardLayout({ user, onLogout }) {
           
           {/* GÓRA: LOGO I NAWIGACJA */}
           <Box>
-            <Group mb={30} gap={12} wrap="nowrap" px={opened ? 'xs' : 4}>
+            {/* Dodane centrowanie, by po zwinięciu paska logo było idealnie na środku */}
+            <Group mb={30} gap={12} wrap="nowrap" px={opened ? 'xs' : 4} justify={opened ? "flex-start" : "center"}>
               <Box 
                 bg="wojcik-red.9" 
                 w={38} h={38} 
@@ -50,12 +52,7 @@ export default function DashboardLayout({ user, onLogout }) {
                 onClick={() => navigate('/')} 
                 expanded={opened} 
               />
-              <SideItem 
-                icon={<History size={20}/>} 
-                label="Historia Zmian" 
-                active={location.pathname === '/history'} 
-                expanded={opened} 
-              />
+              {/* Historia usunięta */}
               {isAdmin && (
                 <>
                   <Divider my="sm" opacity={0.1} label={opened ? "ADMIN" : null} labelPosition="center" />
@@ -75,7 +72,7 @@ export default function DashboardLayout({ user, onLogout }) {
           <Stack gap="xs">
             <Divider opacity={0.1} mb="xs" />
             
-            <SideItem icon={<Search size={20}/>} label="Szukaj" expanded={opened} />
+            {/* Szukaj usunięte */}
             
             <SideItem 
                 icon={computedColorScheme === 'light' ? <Moon size={20} /> : <Sun size={20} />} 
@@ -86,7 +83,8 @@ export default function DashboardLayout({ user, onLogout }) {
 
             <SideItem icon={<Bell size={20}/>} label="Powiadomienia" expanded={opened} />
 
-            <Group gap="sm" px={opened ? 'xs' : 4} py={10} wrap="nowrap">
+            {/* Profil Użytkownika - wyśrodkowany przy wąskim pasku */}
+            <Group gap="sm" px={opened ? 'xs' : 4} py={10} wrap="nowrap" justify={opened ? "flex-start" : "center"}>
                 <Avatar size="sm" radius="md" color="wojcik-red.9">{user?.username?.charAt(0)}</Avatar>
                 {opened && (
                     <Box style={{ flex: 1, overflow: 'hidden' }}>
@@ -94,10 +92,15 @@ export default function DashboardLayout({ user, onLogout }) {
                         <Text size="10px" c="slate.5" truncate>{user?.role || 'Użytkownik'}</Text>
                     </Box>
                 )}
-                <ActionIcon variant="subtle" color="red.5" onClick={onLogout}>
-                    <LogOut size={16} />
-                </ActionIcon>
             </Group>
+
+            {/* Wyloguj - ustandaryzowane jako oddzielna pozycja menu poniżej */}
+            <SideItem 
+                icon={<LogOut size={20} color="var(--mantine-color-red-5)" />} 
+                label="Wyloguj" 
+                onClick={onLogout}
+                expanded={opened} 
+            />
 
             {/* PRZYCISK ROZWIJANIA/ZWIJANIA */}
             <ActionIcon 
